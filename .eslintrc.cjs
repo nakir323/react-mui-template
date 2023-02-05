@@ -8,6 +8,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'airbnb',
     'airbnb-typescript',
+    'react/jsx-runtime',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,13 +18,8 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
-  plugins: [
-    'react',
-    'react-hooks',
-    '@typescript-eslint',
-  ],
-  rules: {
-  },
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  rules: {},
 };
