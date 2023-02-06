@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AnotherPage from './pages/anotherPage/AnotherPage';
+import NotFoundPage from './pages/notFoundPage/NotFoundPage';
 import TopPage from './pages/topPage/TopPage';
 
 export default function RouterConfig() {
@@ -8,6 +9,7 @@ export default function RouterConfig() {
       <Routes>
         <Route index element={<TopPage />} />
         <Route path="another" element={<AnotherPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
