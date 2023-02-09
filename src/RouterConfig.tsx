@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AnotherPage from './pages/anotherPage/AnotherPage';
 import NotFoundPage from './pages/notFoundPage/NotFoundPage';
 import TopPage from './pages/topPage/TopPage';
+import ConfirmDialog from './shared/components/confirmDialog/ConfirmDialog';
 import Snackbar from './shared/components/snackbar/Snackbar';
 
 export default function RouterConfig() {
@@ -13,6 +14,7 @@ export default function RouterConfig() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Snackbar />
+      <ConfirmDialog />
     </BrowserRouter>
   );
 }
