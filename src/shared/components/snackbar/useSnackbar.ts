@@ -17,5 +17,3 @@ export default function useSnackbar() {
     open,
   };
 }
-
-// 次は@packageのeslint plugin入れるところからかな？
