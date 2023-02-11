@@ -21,5 +21,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'react/jsx-no-useless-fragment': 'off',
+  },
 };
