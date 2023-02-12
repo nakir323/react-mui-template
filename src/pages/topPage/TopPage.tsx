@@ -8,9 +8,9 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
-import useSnackbar from '../../shared/components/snackbar/useSnackbar';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
+import useSnackbar from '../../shared/components/snackbar/useSnackbar';
 
 export default function TopPage() {
   const { open } = useSnackbar();
@@ -30,7 +30,7 @@ export default function TopPage() {
           </Link>
         </Box>
         <Box>
-          <Button variant="contained" onClick={() => open('hello!')}>
+          <Button variant="contained" onClick={() => open('hello!!')}>
             Show Snackbar
           </Button>
         </Box>
